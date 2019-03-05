@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 The Liquid Remix Project
+ * Copyright (C) 2018 The FusionRemix ROM
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.liquid.liquidlounge.recents;
+package me.fusionremix.fusionlab.recents;
 
 import android.app.Dialog;
 import android.content.Context;
