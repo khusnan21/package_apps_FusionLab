@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016-2018 LiquidRemix Android Project
+ * Copyright (C) 2019 The FusionRemix ROM
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.liquid.liquidlounge.fragments.about;
+package me.fusionremix.fusionlab.fragments.about;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -26,7 +26,7 @@ import android.support.v7.preference.PreferenceScreen;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.liquid.liquidlounge.R;
+import me.fusionremix.fusionlab.R;
 
 public class Donate extends SettingsPreferenceFragment {
 
@@ -47,7 +47,7 @@ public class Donate extends SettingsPreferenceFragment {
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
         if (preference == mDonateDev) {
-            launchUrl("https://www.paypal.me/liquid0624");
+            launchUrl("https://www.paypal.me/rev31one");
     } 
         return super.onPreferenceTreeClick(preference);
     }
