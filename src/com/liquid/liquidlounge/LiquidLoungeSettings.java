@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 The Liquid Remix Project
+ * Copyright (C) 2018 The FusionRemix ROM
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.liquid.liquidlounge;
+package me.fusionremix.fusionlab;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -31,11 +31,11 @@ import android.view.Surface;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceScreen;
 import com.android.settings.R;
-import com.liquid.liquidlounge.preferences.Utils;
+import me.fusionremix.fusionlab.preferences.Utils;
 
 import com.android.settings.SettingsPreferenceFragment;
 
-public class LiquidLoungeSettings extends SettingsPreferenceFragment {
+public class FusionLabSettings extends SettingsPreferenceFragment {
 
     //private static final String RECENTS_CATEGORY = "recents_category";
     private static final String ACTION_QUICKSTEP = "android.intent.action.QUICKSTEP_SERVICE";
@@ -110,3 +110,4 @@ public class LiquidLoungeSettings extends SettingsPreferenceFragment {
         return true;
     } */
 }
+
