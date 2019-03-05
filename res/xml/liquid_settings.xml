@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018 The Liquid Remix Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/app_settings_title">
+
+    <!-- Ambient -->
+    <Preference
+        android:key="ambient_category"
+        android:title="@string/ambient_title"
+        android:icon="@drawable/ic_settings_ambient"
+        android:fragment="com.liquid.liquidlounge.fragments.AmbientSettings" />
+
+    <!-- Animations -->
+    <Preference
+        android:key="animation_category"
+        android:title="@string/animation_title"
+        android:icon="@drawable/ic_settings_animation"
+        android:fragment="com.liquid.liquidlounge.fragments.AnimationSettings" />
+
+    <!-- Buttons -->
+    <Preference
+        android:key="button_category"
+        android:title="@string/button_title"
+        android:icon="@drawable/ic_settings_button"
+        android:fragment="com.liquid.liquidlounge.fragments.ButtonSettings" />
+
+    <!-- Device -->
+    <Preference
+        android:key="device_part"
+        android:persistent="false"
+         android:title="@string/device_title"
+         android:icon="@drawable/ic_settings_device">
+         <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="org.omnirom.device"
+            android:targetClass="org.omnirom.device.DeviceSettingsActivity" />
+    </Preference>
+
+    <!-- Gestures -->
+    <Preference
+        android:key="gesture_category"
+        android:title="@string/gesture_title"
+        android:icon="@drawable/ic_settings_gesture"
+        android:fragment="com.liquid.liquidlounge.fragments.GestureSettings" />
+
+    <!-- Keyboard -->
+    <Preference
+        android:key="keyboard_category"
+        android:title="@string/keyboard_title"
+        android:icon="@drawable/ic_settings_keyboard"
+        android:fragment="com.liquid.liquidlounge.fragments.KeyboardSettings" />
+
+    <!-- Lock screen -->
+    <Preference
+        android:key="lockscreen_category"
+        android:title="@string/lockscreen_title"
+        android:icon="@drawable/ic_settings_lockscreen"
+        android:fragment="com.liquid.liquidlounge.fragments.LockScreenSettings" />
+
+    <!-- Miscellaneous -->
+    <Preference
+        android:key="misc_category"
+        android:title="@string/misc_title"
+        android:icon="@drawable/ic_settings_misc"
+        android:fragment="com.liquid.liquidlounge.fragments.MiscSettings" />
+
+    <!-- Navigation -->
+    <Preference
+        android:key="navigation_category"
+        android:title="@string/navigation_title"
+        android:icon="@drawable/ic_settings_navigation"
+        android:fragment="com.android.settings.smartnav.NavigationBarSettings" />
+
+    <!-- Notifications -->
+    <Preference
+        android:key="notifications_category"
+        android:title="@string/notifications_title"
+        android:icon="@drawable/ic_settings_notifications"
+        android:fragment="com.liquid.liquidlounge.fragments.NotificationsSettings" />
+
+    <!-- Power menu -->
+    <Preference
+        android:key="powermenu__category"
+        android:title="@string/powermenu_title"
+        android:icon="@drawable/ic_settings_powermenu"
+        android:fragment="com.liquid.liquidlounge.fragments.PowerMenuSettings" />
+
+    <!-- Quick settings -->
+    <Preference
+        android:key="quicksettings_category"
+        android:title="@string/quicksettings_title"
+        android:icon="@drawable/ic_settings_quicksettings"
+        android:fragment="com.liquid.liquidlounge.fragments.QuickSettings" />
+
+    <!-- Recents panel -->
+    <Preference
+        android:key="recents_category"
+        android:title="@string/recents_title"
+        android:icon="@drawable/ic_settings_recents"
+        android:fragment="com.liquid.liquidlounge.fragments.RecentsSettings" />
+
+    <!-- Status bar -->
+    <Preference
+        android:key="statusbar_category"
+        android:title="@string/statusbar_title"
+        android:icon="@drawable/ic_settings_statusbar"
+        android:fragment="com.liquid.liquidlounge.fragments.StatusBarSettings" />
+     
+     <!-- About LiquidRemix -->
+    <Preference
+        android:key="about_category"
+        android:title="@string/about_title"
+        android:icon="@drawable/ic_settings_about"
+        android:fragment="com.liquid.liquidlounge.fragments.About" />
+
+</PreferenceScreen>
