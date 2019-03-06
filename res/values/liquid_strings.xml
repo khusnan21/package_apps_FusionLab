@@ -1376,5 +1376,6 @@
     <!-- QS edit icon -->
     <string name="qs_edit_title">QS edit icon</string>
     <string name="qs_edit_summary">Display the tile edit icon in quick settings footer</string>
-
+    <!-- Advanced Controls -->
+    <string name="advanced_controls_title">Advanced Controls</string>
 </resources>
