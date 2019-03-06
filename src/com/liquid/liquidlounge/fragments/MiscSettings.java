@@ -46,6 +46,8 @@ public class MiscSettings extends SettingsPreferenceFragment
 
     private static final String MEDIA_SCANNER_ON_BOOT = "media_scanner_on_boot";
     private static final String BURN_INTERVAL_KEY = "burn_in_protection_interval";
+    private static final String KEY_DEVICE_PART = "advanced_controls";
+    private static final String KEY_DEVICE_PART_PACKAGE_NAME = "com.thht.settings.device";
 
     private ListPreference mMSOB;
     private SystemSettingSeekBarPreference mBurnInterval;
@@ -55,6 +57,11 @@ public class MiscSettings extends SettingsPreferenceFragment
         super.onCreate(icicle);
 
         addPreferencesFromResource(R.xml.misc_settings);
+
+        // Advanced Controls
+        if (!com.havoc.settings.preferences.Utils.isPackageInstalled(getActivity(), KEY_DEVICE_PART_PACKAGE_NAME)) {
+            getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_PART));
+        }
 
         ContentResolver resolver = getActivity().getContentResolver();
 
