@@ -59,7 +59,7 @@ public class MiscSettings extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.misc_settings);
 
         // Advanced Controls
-        if (!com.havoc.settings.preferences.Utils.isPackageInstalled(getActivity(), KEY_DEVICE_PART_PACKAGE_NAME)) {
+        if (!com.liquid.liquidlounge.Utils.isPackageInstalled(getActivity(), KEY_DEVICE_PART_PACKAGE_NAME)) {
             getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_PART));
         }
 
